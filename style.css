@@ -4,14 +4,15 @@
   box-sizing:border-box;
 }
 
-html,body {
+body {
 	background:#2c3e50;
-	height:100%;
+	
 }
 h1 {
     color: red;
     text-align: center; 
     font-size: 5em;  
+    
 }
 
 
@@ -175,10 +176,12 @@ snowman .bottom {
 
 .ground {
   position: relative;
+  
   width: 100vw;
-  height: 110px;
+  height: 120px;
   background:white;
   margin-top: -10px;  
+  
 }
 
 #snowflakeContainer {
@@ -197,4 +200,95 @@ snowman .bottom {
   border-radius: 50%;
   width: 10px;
   height: 10px;
+}
+
+
+.trunk {
+  width: 50px;
+  height: 100px;
+  background: #794123;
+  margin-top: -200px;
+  margin-left: 180px;
+  z-index: 15;
+}
+
+.treeBottom {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 200px solid green;
+  z-index: 16;
+  margin-top: -275px;
+  margin-left: 60px;
+}
+
+.treeMiddle {
+  width: 0;
+  height: 0;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  border-bottom: 200px solid green;
+  z-index: 17;
+  margin-top: -275px;
+  margin-left: 80px;
+}
+
+
+.treeTop {
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 175px solid green;
+  z-index: 17;
+  margin-top: -275px;
+  margin-left: 115px;
+}
+/* 
+.star-five {
+  margin-top: -175px;
+  margin-left: 150px;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent;
+  border-bottom: 35px solid yellow;
+  border-left: 50px solid transparent;
+  transform: rotate(35deg);
+  z-index: 17;
+  
+}
+.star-five:before {
+  border-bottom: 40px solid red;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -22.5px;
+  left: -32.5px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+  z-index: 17;
+  
+}
+.star-five:after {
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent;
+  border-bottom: 35px solid blue;
+  border-left: 50px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+  z-index: 17;
+   */
 }
