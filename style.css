@@ -245,10 +245,10 @@ snowman .bottom {
   margin-top: -275px;
   margin-left: 115px;
 }
-/* 
-.star-five {
-  margin-top: -175px;
-  margin-left: 150px;
+
+
+#star-five {
+  margin: -198px 156px;
   position: relative;
   display: block;
   color: red;
@@ -258,11 +258,9 @@ snowman .bottom {
   border-bottom: 35px solid yellow;
   border-left: 50px solid transparent;
   transform: rotate(35deg);
-  z-index: 17;
-  
 }
-.star-five:before {
-  border-bottom: 40px solid red;
+#star-five:before {
+  border-bottom: 40px solid yellow;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   position: absolute;
@@ -273,22 +271,194 @@ snowman .bottom {
   display: block;
   content: '';
   transform: rotate(-35deg);
-  z-index: 17;
-  
 }
-.star-five:after {
+#star-five:after {
   position: absolute;
   display: block;
-  color: red;
-  top: 3px;
-  left: -105px;
+  color: black;
+  top: 1.5px;
+  left: -52.5px;
   width: 0px;
   height: 0px;
   border-right: 50px solid transparent;
-  border-bottom: 35px solid blue;
+  border-bottom: 35px solid yellow;
   border-left: 50px solid transparent;
   transform: rotate(-70deg);
   content: '';
-  z-index: 17;
-   */
+}
+
+.bulb1 {
+  margin-left: 100px;
+  margin-top: 500px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 30;
+  animation-name: redBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+
+.bulb2 {
+  margin-left: 140px;
+  margin-top: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  z-index: 35;
+  animation-name: blueBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 4.1s;
+  animation-timing-function: linear;
+}
+
+
+.bulb3 {
+  margin-left: 180px;
+  margin-top: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: purple;
+  border-radius: 50%;
+  z-index: 35;
+  animation-name: purpleBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 4.2s;
+  animation-timing-function: linear;
+}
+
+.bulb4 {
+  margin-left: 220px;
+  margin-top: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: orangered;
+  border-radius: 50%;
+  z-index: 35;
+  animation-name: yellowBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 4.3s;
+  animation-timing-function: linear;
+}
+
+.bulb5 {
+  margin-left: 260px;
+  margin-top: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 35;
+  animation-name: redBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 4.4s;
+  animation-timing-function: linear;
+}
+
+.bulb6 {
+  margin-left: 140px;
+  margin-top: -30px;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  z-index: 35;
+  animation-name: blueBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 4.6s;
+  animation-timing-function: linear;
+}
+
+.bulb7 {
+  margin-left: 180px;
+  margin-top: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: purple;
+  border-radius: 50%;
+  z-index: 35;
+  animation-name: purpleBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 4.7s;
+  animation-timing-function: linear;
+}
+
+.bulb8 {
+  margin-left: 220px;
+  margin-top: -50px;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 35;
+  animation-name: yellowBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 4.8s;
+  animation-timing-function: linear;
+}
+
+.bulb9 {
+  margin-left: 170px;
+  margin-top: -60px;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 35;
+  animation-name: yellowBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 4.9s;
+  animation-timing-function: linear;
+}
+
+
+.bulb10 {
+  margin-left: 200px;
+  margin-top: -55px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 35;
+  animation-name: redBulb;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+
+
+@keyframes redBulb { 
+  0% {background-color: red;}
+  25% {background-color: blue;}
+  50% {background-color: purple;}
+  75% {background-color: yellow;}
+  100% {background-color: red;}
+}
+
+@keyframes blueBulb {
+  0% {background-color: blue;}
+  25% {background-color: purple;}
+  50% {background-color: yellow;}
+  75% {background-color: red;}
+  100% {background-color: blue;}
+}
+
+@keyframes purpleBulb {
+  0% {background-color: purple;}
+  25% {background-color: yellow;}
+  50% {background-color: red;}
+  75% {background-color: blue;}
+  100% {background-color: purple;}
+}
+
+@keyframes yellowBulb {
+  0% {background-color: yellow;}
+  25% {background-color: red;}
+  50% {background-color: blue;}
+  75% {background-color: purple;}
+  100% {background-color: yellow;}
 }
