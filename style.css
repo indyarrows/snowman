@@ -442,6 +442,14 @@ h1 {
   animation-timing-function: linear;
 }
 
+footer {
+  color: rgb(151, 0, 0);
+  margin-top: 400px;
+  text-align: right;
+  z-index: 25;
+  position: relative;
+  font-family: 'Snowburst One', cursive;
+}
 @keyframes redBulb { 
   0% {background-color: red;}
   25% {background-color: blue;}
@@ -475,434 +483,423 @@ h1 {
 }
 
 
-/*
-@media screen and (max-width:850px) {
- h1{
-   font-size: 3em;   
- }
- .tophat {
-  position: relative;
-  width: 50px;
-  height: 50px;
+
+/* @media screen and (max-width: 480px) {
+  h1 {
+      color: red;
+      text-align: center; 
+      font-size: 1.5em;  
+      font-family: 'Mountains of Christmas', cursive;
+  }
+  body {
+    width: 70vw;
+  }
+
+
   
-  background: black;
-  z-index: 1;
-  
-}
-
-.strap {
-  width: 50px;
-  height: 5px;
-  background-color: rgb(179, 8, 8);
-  margin-top: -240px;
-  margin-left: 50%;
-  z-index: 5;
-  position: relative;
-}
-.brim{
-  position: relative;
-  width: 80px;
-  height: 5px;
-  background: black;
-  border-radius: 10px;
-  margin-left: -4%;
-
-  z-index: 1;
-}
-
-.hat {
-  margin-left: 50%;
-  z-index: 1;
-}
-
-.head {
-  position: relative;
-  margin-left: 48.5%;
-  
+  .tophat {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    background: black;
+    z-index: 1;
     
-  width: 75px;
-  height: 75px;
-  background: white;
-  border-radius: 50%;
-}
-
-.leftEye {
-  position: relative;
+  }
   
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: black;
+  .strap {
+    width: 500px;
+    height: 5px;
+    background-color: rgb(179, 8, 8);
+    margin-top: -270px;
+    margin-left: 50%;
+    z-index: 5;
+    position: relative;
+  }
+  .brim{
+    position: relative;
+    width: 80px;
+    height: 5px;
+    background: black;
+    border-radius: 10px;
+    margin-left: -4%;
   
-}
-
-
-.rightEye {
-  position: relative;
-  margin-left: 20px;
+    z-index: 1;
+  }
   
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background:black;
+  .hat {
+    margin-left: 50%;
+      z-index: 1;
+  }
   
-}
-
-.eyes {
-  display: flex;
-  flex-direction: row;
-  margin-left: 50%;
+  .head {
+    position: relative;
+    margin-left: 48.5%;
+    margin-top: -20px;
+      
+    width: 75px;
+    height: 75px;
+    background: white;
+    border-radius: 50%;
+  }
   
-}
-
-.nose {
-  position:relative;
-  width: 0;
-  height: 0;
-  margin-left: 49%;
-  margin-top: 5px;
-  border-top: 5px solid transparent;
-  border-right: 25px solid orangered;
-  border-bottom: 5px solid transparent;
-}
-
-.mouth {
-  position: relative;
-  margin-left: 50%;
-  
-  width: 40px;
-  height: 20px;
-  border-radius: 50%;
-  box-shadow: 0px 2.5px 0 0 black;
-}
-
-.scarf {
-  border-bottom: 10px solid rgb(209, 27, 27);
-  border-left: 7px solid transparent;
-  border-right: 14px solid transparent;
-  height: 0;
-  width: 68px;
-  position: relative;
-  
-  margin-left: 46%;
-  z-index: 30;
-  left: 25px;
-  border-radius: 0px 50% 2.5px 5px;
-}
-
-.scarf:after {
-  width: 37px;
-  height: 8.5px;
-  -webkit-transform: rotate(86deg);
-  -moz-transform: rotate(86deg);
-  transform: rotate(86deg);
-  background: rgb(209, 27, 27);
-  display: inline-block;
-  content: "";
-  position: relative;
-  top: 17px;
-  left: 7.5px;
-  border-radius: 50% 0% 50% 50%;
-  box-shadow: -4px 0px rgba(0,0,0,0.1) inset;
-}
-
-.bottom {
-  position: relative;
-  margin-left: 47%;
-   
-  
-  width: 100px;
-  height: 100px;
-  background: white;
-  border-radius: 50%; 
-}
-
-#buttonGroup {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  z-index: 8;
-}
-.button1 {
-  position: relative;
-  margin-left: 52%;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: black;  
-  z-index: 8;
-}
-
-.button2   {
-  position: relative;
-  margin-left: 52%;
+  .leftEye {
+    position: relative;
+    
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    
+  }
   
   
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: black;  
-  z-index: 8;
-}
-
-.ground {
-  position: fixed;
+  .rightEye {
+    position: relative;
+    margin-left: 20px;
+    
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:black;
+    
+  }
   
-  width: 100vw;
-  height: 60px;
-  background:red;
-  margin-top:75px;
+  .eyes {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+    margin-top: -100px;
+  }
   
-}
+  .nose {
+    position:relative;
+    width: 0;
+    height: 0;
+    margin-left: 49%;
+    margin-top: 5px;
+    border-top: 5px solid transparent;
+    border-right: 25px solid orangered;
+    border-bottom: 5px solid transparent;
+  }
+  
+  .mouth {
+    position: relative;
+    margin-left: 50%;
+    margin-top: -10px;
+    width: 40px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 0 0 black;
+  }
+  
+  .scarf {
+    border-bottom: 10px solid rgb(209, 27, 27);
+    border-left: 7px solid transparent;
+    border-right: 14px solid transparent;
+    height: 0;
+    width: 68px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 46%;
+    z-index: 30;
+    left: 50px;
+    border-radius: 0px 100% 2.5px 5px;
+  }
+  
+  .scarf:after {
+    width: 37px;
+    height: 8.5px;
+    -webkit-transform: rotate(86deg);
+    -moz-transform: rotate(86deg);
+    transform: rotate(86deg);
+    background: rgb(209, 27, 27);
+    display: inline-block;
+    content: "";
+    position: relative;
+    top: 34px;
+    left: 15px;
+    border-radius: 50% 0% 50% 50%;
+    box-shadow: -4px 0px rgba(0,0,0,0.1) inset;
+  }
+  
+  .bottom {
+    position: relative;
+    margin-left: 47%;
+     
+    margin-top: -120px;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%; 
+  }
+  
+  #buttonGroup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 8;
+  }
+  .button1 {
+    position: relative;
+    margin-left: 52%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;  
+    z-index: 8;
+  }
+  
+  .button2   {
+    position: relative;
+    margin-left: 52%;
+    
+    
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;  
+    z-index: 8;
+  }
+  
+  .ground {
+    position: relative;
+    width: 100vw;
+    height: 60px;
+    background:red;
+    margin-top: 220px;
 
-#snowflakeContainer {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  display: none;
-}
-
-.snowflake {
-  position: fixed;
-  background-color: #CCC;
-  user-select: none;
-  z-index: 1000;
-  pointer-events: none;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-
-
-.trunk {
-  width: 25px;
-  height: 50px;
-  background: #794123;
-  margin-top: 25px;
-  margin-left: 125px;
-  z-index: 15;
-  position: relative;
-}
-
-.treeBottom {
-  width: 0;
-  height: 0;
-  border-left: 75px solid transparent;
-  border-right: 75px solid transparent;
-  border-bottom: 100px solid green;
-  z-index: 16;
-  margin-top: -150px;
-  margin-left: 60px;
-}
-
-.treeMiddle {
-  width: 0;
-  height: 0;
-  border-left: 62.5px solid transparent;
-  border-right: 62.5px solid transparent;
-  border-bottom: 100px solid green;
-  z-index: 17;
-  margin-top: -140px;
-  margin-left: 70px;
-}
-
-
-.treeTop {
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-bottom: 87.5px solid green;
-  z-index: 17;
-  margin-top: -140px;
-  margin-left: 90px;
-}
-
-
-#star-five {
-  margin: -100px 156px;
-  position: relative;
-  display: block;
-  color: red;
-  width: 0px;
-  height: 0px;
-  border-right: 50px solid transparent;
-  border-bottom: 35px solid yellow;
-  border-left: 50px solid transparent;
-  transform: rotate(35deg);
-}
-#star-five:before {
-  border-bottom: 40px solid yellow;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  position: absolute;
-  height: 0;
-  width: 0;
-  top: -22.5px;
-  left: -32.5px;
-  display: block;
-  content: '';
-  transform: rotate(-35deg);
-}
-#star-five:after {
-  position: absolute;
-  display: block;
-  color: black;
-  top: 1.5px;
-  left: -52.5px;
-  width: 0px;
-  height: 0px;
-  border-right: 50px solid transparent;
-  border-bottom: 35px solid yellow;
-  border-left: 50px solid transparent;
-  transform: rotate(-70deg);
-  content: '';
-}
-
-.bulb1 {
-  margin-left: 100px;
-  margin-top: 500px;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 50%;
-  z-index: 30;
-  animation-name: redBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-}
-
-.bulb2 {
-  margin-left: 140px;
-  margin-top: -50px;
-  width: 20px;
-  height: 20px;
-  background-color: blue;
-  border-radius: 50%;
-  z-index: 35;
-  animation-name: blueBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 4.1s;
-  animation-timing-function: linear;
-}
-
-
-.bulb3 {
-  margin-left: 180px;
-  margin-top: -50px;
-  width: 20px;
-  height: 20px;
-  background-color: purple;
-  border-radius: 50%;
-  z-index: 35;
-  animation-name: purpleBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 4.2s;
-  animation-timing-function: linear;
-}
-
-.bulb4 {
-  margin-left: 220px;
-  margin-top: -50px;
-  width: 20px;
-  height: 20px;
-  background-color: orangered;
-  border-radius: 50%;
-  z-index: 35;
-  animation-name: yellowBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 4.3s;
-  animation-timing-function: linear;
-}
-
-.bulb5 {
-  margin-left: 260px;
-  margin-top: -50px;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 50%;
-  z-index: 35;
-  animation-name: redBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 4.4s;
-  animation-timing-function: linear;
-}
-
-.bulb6 {
-  margin-left: 140px;
-  margin-top: -30px;
-  width: 20px;
-  height: 20px;
-  background-color: blue;
-  border-radius: 50%;
-  z-index: 35;
-  animation-name: blueBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 4.6s;
-  animation-timing-function: linear;
-}
-
-.bulb7 {
-  margin-left: 180px;
-  margin-top: -50px;
-  width: 20px;
-  height: 20px;
-  background-color: purple;
-  border-radius: 50%;
-  z-index: 35;
-  animation-name: purpleBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 4.7s;
-  animation-timing-function: linear;
-}
-
-.bulb8 {
-  margin-left: 220px;
-  margin-top: -50px;
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
-  border-radius: 50%;
-  z-index: 35;
-  animation-name: yellowBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 4.8s;
-  animation-timing-function: linear;
-}
-
-.bulb9 {
-  margin-left: 170px;
-  margin-top: -60px;
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
-  border-radius: 50%;
-  z-index: 35;
-  animation-name: yellowBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 4.9s;
-  animation-timing-function: linear;
-}
-
-
-.bulb10 {
-  margin-left: 200px;
-  margin-top: -55px;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 50%;
-  z-index: 35;
-  animation-name: redBulb;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-}
-
-
-
-}
+    
+  }
+  
+  .trunk {
+    width: 25px;
+    height: 50px;
+    background: #794123;
+    margin-top: -100px;
+    margin-left: 40px;
+    z-index: 10;
+    position: relative;
+  }
+  
+  .treeBottom {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 50px solid green;
+    z-index: 16;
+    margin-top: -90px;
+    margin-left: 12px;
+    position: relative;
+  }
+  
+  .treeMiddle {
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 50px solid green;
+    z-index: 17;
+    margin-top: -80px;
+    margin-left: 15px;
+  }
+  
+  
+  .treeTop {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid green;
+    z-index: 17;
+    margin-top: -80px;
+    margin-left: 25px;
+  }
+  
+  
+  #star-five {
+    margin: -198px 156px;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid yellow;
+    border-left: 50px solid transparent;
+    transform: rotate(35deg);
+  }
+  #star-five:before {
+    border-bottom: 40px solid yellow;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -22.5px;
+    left: -32.5px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  #star-five:after {
+    position: absolute;
+    display: block;
+    color: black;
+    top: 1.5px;
+    left: -52.5px;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid yellow;
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+  
+  .bulb1 {
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 30;
+    animation-name: redBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+  }
+  
+  .bulb2 {
+    margin-left: 140px;
+    margin-top: -50px;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    z-index: 35;
+    animation-name: blueBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 4.1s;
+    animation-timing-function: linear;
+  }
+  
+  
+  .bulb3 {
+    margin-left: 180px;
+    margin-top: -50px;
+    width: 10px;
+    height: 10px;
+    background-color: purple;
+    border-radius: 50%;
+    z-index: 35;
+    animation-name: purpleBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 4.2s;
+    animation-timing-function: linear;
+  }
+  
+  .bulb4 {
+    margin-left: 220px;
+    margin-top: -50px;
+    width: 10px;
+    height: 10px;
+    background-color: orangered;
+    border-radius: 50%;
+    z-index: 35;
+    animation-name: yellowBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 4.3s;
+    animation-timing-function: linear;
+  }
+  
+  .bulb5 {
+    margin-left: 260px;
+    margin-top: -50px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 35;
+    animation-name: redBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 4.4s;
+    animation-timing-function: linear;
+  }
+  
+  .bulb6 {
+    margin-left: 140px;
+    margin-top: -30px;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    z-index: 35;
+    animation-name: blueBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 4.6s;
+    animation-timing-function: linear;
+  }
+  
+  .bulb7 {
+    margin-left: 180px;
+    margin-top: -50px;
+    width: 10px;
+    height: 10px;
+    background-color: purple;
+    border-radius: 50%;
+    z-index: 35;
+    animation-name: purpleBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 4.7s;
+    animation-timing-function: linear;
+  }
+  
+  .bulb8 {
+    margin-left: 220px;
+    margin-top: -50px;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: 35;
+    animation-name: yellowBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 4.8s;
+    animation-timing-function: linear;
+  }
+  
+  .bulb9 {
+    margin-left: 170px;
+    margin-top: -60px;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: 35;
+    animation-name: yellowBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 4.9s;
+    animation-timing-function: linear;
+  }
+  
+  
+  .bulb10 {
+    margin-left: 200px;
+    margin-top: -55px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 35;
+    animation-name: redBulb;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+  }
+} */
+ 
